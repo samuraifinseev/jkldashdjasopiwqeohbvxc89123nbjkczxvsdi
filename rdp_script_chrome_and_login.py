@@ -40,9 +40,9 @@ click(172, 58, 1, 0, 'left'); keyboard.write('azure.microsoft.com', 0,1); keyboa
 click(1153, 184, 1, 0, 'left'); sleep(10) # sign in
 click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(3) # email input
 click(475, 482, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(3) # password input
-#(945, 363, 1, 0, 'left');
+(1022, 387, 1, 0, 'left');
 sleep(2); click(719, 596, 1, 0, 'left'); sleep(15) # password save and stay sign in
-click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(12); # переходим в настройки акка из
+click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(15); # переходим в настройки акка из
 # панели азура
 click(880, 313, 1, 0, 'left'); sleep(7) # нажимаем изменить пасс кнопку
 click(454, 567, 1, 0, 'left'); sleep(1);
@@ -69,7 +69,8 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 print(security_code_ready)
-sleep(5); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); click(714, 586, 1, 0, 'left'); sleep(15) # вводим секьюрити код 1
+sleep(5); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(2); click(721, 604, 1, 0, 'left'); sleep(15) # вводим секьюрити код 1
+click(538, 452, 1, 0, 'left'); sleep(3) # подтвердить для ввода резерва и второго кода доступа
 click(505, 505, 1, 0, 'left'); keyboard.write(email_reserve, delay=0.1); click(718, 594, 1, 0, 'left'); sleep(4) # вводим почту 2ой раз
 security_code = ''; security_code_ready = ''; text = ''; subject = ''
 # Start listening ПОЛУЧАЕМ КОД
@@ -87,11 +88,11 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 
-click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); click(711, 598, 1, 0, 'left'); sleep(10) # вводим секьюрити код 2
+click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(2); click(711, 598, 1, 0, 'left'); sleep(10) # вводим секьюрити код 2
 click(447, 605, 1, 0, 'left'); sleep(8) # отказываемся от доп защиты с пассом
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
-click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', dela=0.1); sleep(1.5) # вводим новый пасс 1
-click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', dela=0.1); sleep(1.5) # вводим новый пасс 2
+click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
+click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
 click(110, 629, 1, 0, 'left'); sleep(20) # подтверждаем изменение пасса
-click(518, 461, 1, 0, 'left'); keyboard.write('56981488228Simak', dela=0.1); sleep(1.5); click(712, 625, 1, 0, 'left'); sleep(15) # во время разлогина заходим снова под акк
+click(518, 461, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5); click(712, 625, 1, 0, 'left'); sleep(15) # во время разлогина заходим снова под акк
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left') # закрываем еще одно окно навязывания хуйни для защиты
