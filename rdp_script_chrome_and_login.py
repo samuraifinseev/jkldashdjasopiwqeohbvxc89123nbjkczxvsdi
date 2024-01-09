@@ -40,7 +40,7 @@ click(172, 58, 1, 0, 'left'); keyboard.write('azure.microsoft.com', 0,1); keyboa
 click(1153, 184, 1, 0, 'left'); sleep(10) # sign in
 click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(3) # email input
 click(475, 482, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(5) # password input
-click(1020, 366, 1, 0, 'left'); # отменить сохранение данных лог пасса
+click(1020, 366, 1, 0, 'left') # отменить сохранение данных лог пасса
 sleep(2); click(719, 596, 1, 0, 'left'); sleep(15) # password save and stay sign in
 click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(15); # переходим в настройки акка из
 # панели азура
