@@ -57,7 +57,7 @@ keyboard.write(email_reserve, delay=0.1); sleep(2); click(722, 674, 1, 0, 'left'
 # Start listening
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
-time.sleep(65)
+time.sleep(75)
 print(text, 'проверка на наличие кода')
 test.stop()
 list_of_text = text.split('\n')
@@ -93,7 +93,7 @@ click(447, 605, 1, 0, 'left'); sleep(8) # отказываемся от доп �
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
-click(110, 629, 1, 0, 'left'); sleep(30) # подтверждаем изменение пасса
+click(110, 629, 1, 0, 'left'); sleep(15) # подтверждаем изменение пасса
 click(518, 461, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.4); sleep(1.5); click(712, 625, 1, 0, 'left'); sleep(15) # во время разлогина заходим снова под акк
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # закрываем еще одно окно навязывания хуйни для защиты
 click(717, 621, 1, 0, 'left'); sleep(15); # переходим в секьюрити
