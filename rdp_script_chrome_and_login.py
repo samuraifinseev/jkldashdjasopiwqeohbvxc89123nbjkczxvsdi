@@ -107,7 +107,7 @@ click(132, 17, 1, 0, 'left'); sleep(2); click(224, 234, 1, 0, 'left'); sleep(7);
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
 now_time = str(datetime.now())
 chat_id = '506640934'
-message = stroka_acca + '\n' +  now_time + '\n' +  email_reserve
+message = '[RDP] POSTAVIL NA ACC: \n' + stroka_acca + '\n' +  now_time + '\n' +  email_reserve
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
 print(requests.get(url).json()) # Эта строка отсылает сообщение
 ##################
