@@ -96,7 +96,7 @@ click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
 click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем изменение пасса
-click(1020, 366, 1, 0, 'left'); sleep(3) # отменить сохранение данных лог пасса
+click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 click(451, 460, 1, 0, 'left'); sleep(3); keyboard.write('56981488228Simak', delay=0.2); sleep(2.5); click(717, 622, 1, 0, 'left'); sleep(15) # перелогин на случай вылета из панели
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # закрываем еще одно окно навязывания хуйни для защиты
 click(717, 621, 1, 0, 'left'); sleep(15); # переходим в секьюрити
