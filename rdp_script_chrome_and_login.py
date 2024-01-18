@@ -91,7 +91,7 @@ for i in range(len(security_code)):
         security_code_ready += security_code[i]
 
 click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(2); click(711, 598, 1, 0, 'left'); sleep(10) # вводим секьюрити код 2
-click(447, 605, 1, 0, 'left'); sleep(8) # отказываемся от доп защиты с пассом
+click(447, 605, 1, 0, 'left'); sleep(15) # отказываемся от доп защиты с пассом
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
