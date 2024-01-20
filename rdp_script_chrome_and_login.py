@@ -39,7 +39,8 @@ for i in tqdm(range(100)):
 click(1018, 770, 1, 0, 'left'); sleep(3); click(1018, 770, 1, 0, 'left'); sleep(3); click(693, 714, 1, 0, 'left'); sleep(3) # завершаем настройку хрома
 click(981, 27, 1, 0, 'left'); sleep(3) # хром на полный экран
 click(172, 58, 1, 0, 'left'); keyboard.write('azure.microsoft.com', 0,1); keyboard.send('enter'); sleep(12) # ввод azure.microsoft.com
-click(1153, 184, 1, 0, 'left'); sleep(10) # sign in
+#click(1153, 184, 1, 0, 'left'); sleep(10) # sign in UNITED KINGDOM
+click(1153, 115, 1, 0, 'left'); sleep(10) # sign in UNITED STATES
 click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(3) # email input
 click(475, 482, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(5) # password input
 click(1020, 366, 1, 0, 'left') # отменить сохранение данных лог пасса
