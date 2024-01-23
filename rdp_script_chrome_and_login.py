@@ -73,7 +73,7 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 print(security_code_ready)
-sleep(5); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(721, 604, 1, 0, 'left'); sleep(15) # вводим секьюрити код 1
+sleep(5); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(721, 604, 1, 0, 'left'); sleep(20) # вводим секьюрити код 1
 click(538, 452, 1, 0, 'left'); sleep(6) # подтвердить для ввода резерва и второго кода доступа
 click(505, 505, 1, 0, 'left'); keyboard.write(email_reserve, delay=0.1); click(718, 594, 1, 0, 'left'); sleep(4) # вводим почту 2ой раз
 security_code = ''; security_code_ready = ''; text = ''; subject = ''
@@ -92,8 +92,8 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 
-click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(711, 598, 1, 0, 'left'); sleep(15) # вводим секьюрити код 2
-click(447, 605, 1, 0, 'left'); sleep(15) # отказываемся от доп защиты с пассом
+click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(711, 598, 1, 0, 'left'); sleep(25) # вводим секьюрити код 2
+click(447, 605, 1, 0, 'left'); sleep(25) # отказываемся от доп защиты с пассом
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
