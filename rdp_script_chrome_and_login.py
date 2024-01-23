@@ -98,6 +98,7 @@ click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
 click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем изменение пасса
+press('f5'); sleep(20) # refresh page
 click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 for i in range(10):
     click(451, 460, 1, 0, 'left');
