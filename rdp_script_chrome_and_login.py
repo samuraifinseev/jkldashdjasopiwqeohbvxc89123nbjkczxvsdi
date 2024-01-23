@@ -83,10 +83,10 @@ security_code = ''; security_code_ready = ''; text = ''; subject = ''
 # Start listening ПОЛУЧАЕМ КОД
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
-#while security_code == '':
-#    time.sleep(5)
-time.sleep(33)
-print(text, 'проверка на наличие кода')
+while text == '':
+    time.sleep(3)
+    print(text, 'проверка на наличие кода')
+#time.sleep(33)
 test.stop()
 list_of_text = text.split('\n')
 for i in range(len(list_of_text)):
