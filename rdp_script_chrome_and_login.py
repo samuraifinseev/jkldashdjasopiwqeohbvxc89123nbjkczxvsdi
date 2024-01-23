@@ -102,8 +102,8 @@ click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sl
 click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем изменение пасса
 press('f5'); sleep(20) # refresh page
 click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
-for i in range(10):
-    click(451, 435, 1, 0, 'left');
+#for i in range(10):
+ #   click(451, 435, 1, 0, 'left');
 click(451, 435, 1, 0, 'left'); sleep(1); keyboard.write('56981488', delay=0.2); sleep(3.5); keyboard.write('228Simak', delay=0.2); click(717, 600, 1, 0, 'left'); sleep(15) # перелогин на случай вылета из панели
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # закрываем еще одно окно навязывания хуйни для защиты
 click(717, 621, 1, 0, 'left'); sleep(20); # переходим в секьюрити
