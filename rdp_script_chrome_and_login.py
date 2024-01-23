@@ -61,7 +61,7 @@ keyboard.write(email_reserve, delay=0.1); sleep(2); click(722, 674, 1, 0, 'left'
 # Start listening
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
-time.sleep(33)
+time.sleep(45)
 print(text, 'проверка на наличие кода')
 test.stop()
 list_of_text = text.split('\n')
