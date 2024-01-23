@@ -41,7 +41,7 @@ click(981, 27, 1, 0, 'left'); sleep(3) # хром на полный экран
 click(172, 58, 1, 0, 'left'); keyboard.write('azure.microsoft.com', 0,1); keyboard.send('enter'); sleep(12) # ввод azure.microsoft.com
 #click(1153, 184, 1, 0, 'left'); sleep(10) # sign in UNITED KINGDOM
 click(1153, 115, 1, 0, 'left'); sleep(10) # sign in UNITED STATES
-click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(17) # email input
+click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(3) # email input
 click(475, 482, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(5) # password input
 click(1020, 366, 1, 0, 'left') # отменить сохранение данных лог пасса
 sleep(2); click(719, 596, 1, 0, 'left'); sleep(15) # password save and stay sign in
@@ -101,7 +101,7 @@ click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем измене
 click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 for i in range(10):
     click(451, 460, 1, 0, 'left');
-click(451, 460, 1, 0, 'left'); sleep(1); keyboard.write('56981488228Simak', delay=0.2); sleep(2.5); click(717, 622, 1, 0, 'left'); sleep(15) # перелогин на случай вылета из панели
+click(451, 460, 1, 0, 'left'); sleep(1); keyboard.write('56981488', delay=0.2); sleep(3.5); keyboard.write('228Simak', delay=0.2); click(717, 622, 1, 0, 'left'); sleep(15) # перелогин на случай вылета из панели
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # закрываем еще одно окно навязывания хуйни для защиты
 click(717, 621, 1, 0, 'left'); sleep(20); # переходим в секьюрити
 scroll(-3200); sleep(2); click(123, 725, 1, 0, 'left'); sleep(7); click(491, 551, 1, 0, 'left'); sleep(2) # скролим вниз и генерим новый код и подтверждаем
