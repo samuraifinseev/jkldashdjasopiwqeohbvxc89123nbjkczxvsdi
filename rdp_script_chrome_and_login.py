@@ -80,6 +80,8 @@ security_code = ''; security_code_ready = ''; text = ''; subject = ''
 # Start listening ПОЛУЧАЕМ КОД
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
+#while security_code == '':
+#    time.sleep(5)
 time.sleep(33)
 print(text, 'проверка на наличие кода')
 test.stop()
@@ -101,8 +103,8 @@ click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем измене
 press('f5'); sleep(20) # refresh page
 click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 for i in range(10):
-    click(451, 460, 1, 0, 'left');
-click(451, 460, 1, 0, 'left'); sleep(1); keyboard.write('56981488', delay=0.2); sleep(3.5); keyboard.write('228Simak', delay=0.2); click(717, 622, 1, 0, 'left'); sleep(15) # перелогин на случай вылета из панели
+    click(451, 435, 1, 0, 'left');
+click(451, 435, 1, 0, 'left'); sleep(1); keyboard.write('56981488', delay=0.2); sleep(3.5); keyboard.write('228Simak', delay=0.2); click(717, 600, 1, 0, 'left'); sleep(15) # перелогин на случай вылета из панели
 click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(11) # закрываем еще одно окно навязывания хуйни для защиты
 click(717, 621, 1, 0, 'left'); sleep(20); # переходим в секьюрити
 scroll(-3200); sleep(2); click(123, 725, 1, 0, 'left'); sleep(7); click(491, 551, 1, 0, 'left'); sleep(2) # скролим вниз и генерим новый код и подтверждаем
