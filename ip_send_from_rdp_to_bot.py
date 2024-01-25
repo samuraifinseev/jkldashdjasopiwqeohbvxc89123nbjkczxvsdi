@@ -18,25 +18,25 @@ def sort_ips_from_file(list_of_vms, start_vms, number_of_vms):
             ips_str += temp_stroka_ip + '\n'
     return ips_str
     #return ready_list_of_ips
-def from_rdp_to_tg(ips):
+def from_rdp_to_tg(ips, shag):
     TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
     chat_id = '506640934'
-    message = ips
+    message = ips + '[' + str(shag) + ']'
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json())  # Эта строка отсылает сообщение
 if len(list_of_vms_info) == 3:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 0, 3)
-    from_rdp_to_tg(ips_serv_group)
+    from_rdp_to_tg(ips_serv_group, 1)
     print(ips_serv_group)
 if len(list_of_vms_info) == 8:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 3, 8)
-    from_rdp_to_tg(ips_serv_group)
+    from_rdp_to_tg(ips_serv_group, 2)
     print(ips_serv_group)
 if len(list_of_vms_info) == 14:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 8, 14)
-    from_rdp_to_tg(ips_serv_group)
+    from_rdp_to_tg(ips_serv_group, 3)
     print(ips_serv_group)
 if len(list_of_vms_info) == 17:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 14, 17)
-    from_rdp_to_tg(ips_serv_group)
+    from_rdp_to_tg(ips_serv_group, 4)
     print(ips_serv_group)
