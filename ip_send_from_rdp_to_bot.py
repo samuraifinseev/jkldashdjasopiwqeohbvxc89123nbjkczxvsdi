@@ -3,8 +3,11 @@ vms_info_file = open('test.csv')
 data_of_vms_info_file = vms_info_file.read()
 list_of_vms_info = data_of_vms_info_file.split('\n'); #list_of_vms_info.sort(); #del list_of_ips[0:3];
 ready_list_of_ips = []
-response = requests.get('https://api.ipify.org')
-ip_address_rdp = response.text
+try:
+    response = requests.get('https://api.ipify.org')
+    ip_address_rdp = response.text
+except:
+    ip_address_rdp = 'NONE_FAILED'
 del list_of_vms_info[0]; del list_of_vms_info[len(list_of_vms_info) - 1]
 for i in range(len(list_of_vms_info)):
     list_of_vms_info[i] = list_of_vms_info[i][list_of_vms_info[i].find('IPAddresses'):]
