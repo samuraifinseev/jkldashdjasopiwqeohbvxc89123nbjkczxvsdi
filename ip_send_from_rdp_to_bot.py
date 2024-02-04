@@ -37,7 +37,7 @@ if len(list_of_vms_info) == 8:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 3, 8)
     from_rdp_to_tg(ips_serv_group, 2)
     print(ips_serv_group)
-if len(list_of_vms_info) == 14:
+if len(list_of_vms_info) == 13:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 8, 13)
     from_rdp_to_tg(ips_serv_group, 3)
     print(ips_serv_group)
