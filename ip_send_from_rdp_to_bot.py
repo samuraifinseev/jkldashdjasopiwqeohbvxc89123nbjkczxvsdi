@@ -22,7 +22,7 @@ def sort_ips_from_file(list_of_vms, start_vms, number_of_vms):
             ready_list_of_ips.append(temp_stroka_ip)
             ips_str += temp_stroka_ip + '\n'
     if ips_str == '':
-        ips_str = 'Ne udalos poluchit infu | prover sam'
+        ips_str = 'Не удалось получить инфу о вмках / перепроверь сам.'
     return ips_str
     #return ready_list_of_ips
 def from_rdp_to_tg(ips, shag):
@@ -46,4 +46,8 @@ if len(list_of_vms_info) == 13:
 if len(list_of_vms_info) == 17:
     ips_serv_group = sort_ips_from_file(list_of_vms_info, 13, 17)
     from_rdp_to_tg(ips_serv_group, 4)
+    print(ips_serv_group)
+if len(list_of_vms_info) != 17 and len(list_of_vms_info) != 13 and len(list_of_vms_info) != 8 and len(list_of_vms_info) != 3:
+    ips_serv_group = 'Не удалось подсчитать кол-во строк в файле VM'
+    from_rdp_to_tg(ips_serv_group, 0)
     print(ips_serv_group)
