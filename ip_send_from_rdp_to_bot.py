@@ -48,6 +48,6 @@ if len(list_of_vms_info) == 17:
     from_rdp_to_tg(ips_serv_group, 4)
     print(ips_serv_group)
 if len(list_of_vms_info) != 17 and len(list_of_vms_info) != 13 and len(list_of_vms_info) != 8 and len(list_of_vms_info) != 3:
-    ips_serv_group = 'Не удалось подсчитать кол-во строк в файле VM'
+    ips_serv_group = 'Некорректно подсчитались строки в файле. \n значения, которые могут быть - [3], [8], [13], [17] \n Текущее значение:' + str(len(list_of_vms_info))
     from_rdp_to_tg(ips_serv_group, 0)
     print(ips_serv_group)
