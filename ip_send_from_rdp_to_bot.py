@@ -21,6 +21,8 @@ def sort_ips_from_file(list_of_vms, start_vms, number_of_vms):
             temp_stroka_ip = temp_stroka_ip[:temp_stroka_ip.find('"')]
             ready_list_of_ips.append(temp_stroka_ip)
             ips_str += temp_stroka_ip + '\n'
+    if ips_str == '':
+        ips_str = 'Ne udalos poluchit infu | prover sam'
     return ips_str
     #return ready_list_of_ips
 def from_rdp_to_tg(ips, shag):
