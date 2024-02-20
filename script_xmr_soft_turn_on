@@ -14,7 +14,7 @@ rm -r cpuminer-opt-linux.tar.gz
 wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx.tar.gz -P /home/azureuser
 tar -xf hellminer_linux64_avx.tar.gz
 rm -r hellminer_linux64_avx.tar.gz
-#### SRB MINER MULTI КОНФИНГ: sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool eu.luckpool.net:3956 --wallet RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --proxy localhost:9050 --cpu-threads 2
+#### SRB MINER MULTI КОНФИНГ: tmux new -ds servak sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool eu.luckpool.net:3956 --wallet RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --proxy localhost:9050 --cpu-threads 2
 wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.4.7/SRBMiner-Multi-2-4-7-Linux.tar.xz -P /home/azureuser
 tar -xf hellminer_linux64_avx.tar.gz
 rm -r hellminer_linux64_avx.tar.gz
