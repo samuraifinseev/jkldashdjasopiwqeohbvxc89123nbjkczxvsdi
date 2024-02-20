@@ -31,5 +31,7 @@ crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
 crontab -l | { cat; echo "0,30 * * * * /home/azureuser/trade_cpo"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
+sudo echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
+sudo echo ". history -cw" >> ~/.bashrc
 sleep 15
 sudo systemctl start tor
