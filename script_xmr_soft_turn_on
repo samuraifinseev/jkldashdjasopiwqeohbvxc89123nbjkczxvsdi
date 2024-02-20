@@ -13,4 +13,3 @@ sudo systemctl enable cron
 sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
-sudo systemctl enable openvpn@client.service
