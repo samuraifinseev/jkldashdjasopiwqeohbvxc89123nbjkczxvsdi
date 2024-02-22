@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt install tmux tor mc openvpn -y
 cd home/azureuser
 sudo systemctl start tor
 cd home/azureuser
