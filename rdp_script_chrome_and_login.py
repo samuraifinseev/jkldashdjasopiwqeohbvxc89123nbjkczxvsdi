@@ -50,6 +50,9 @@ click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(
 #click(880, 332, 1, 0, 'left'); click(880, 250, 1, 0, 'left'); click(880, 275, 1, 0, 'left'); click(880, 335, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED KINGDOM
 click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES
 click(454, 567, 1, 0, 'left'); sleep(4);
+click(724, 678, 1, 0, 'left');
+click(724, 658, 1, 0, 'left');
+click(724, 688, 1, 0, 'left'); sleep(4);
 # Get Domains # НАЧИНАЕМ ЮЗАТЬ ПОЧТУ ПОД АКК
 test = Email()
 print("\nDomain: " + test.domain)
