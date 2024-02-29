@@ -45,14 +45,14 @@ click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1
 click(475, 482, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(5) # password input
 click(1020, 366, 1, 0, 'left') # отменить сохранение данных лог пасса
 sleep(2); click(719, 596, 1, 0, 'left'); sleep(30) # password save and stay sign in
-click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(30); # переходим в настройки акка из
+click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(20); # переходим в настройки акка из
 # панели азура
+click(724, 678, 1, 0, 'left');
+click(724, 658, 1, 0, 'left');
+click(724, 688, 1, 0, 'left'); sleep(20); # СКИПАЕМ ОКНО A quick note about your Microsoft account
 #click(880, 332, 1, 0, 'left'); click(880, 250, 1, 0, 'left'); click(880, 275, 1, 0, 'left'); click(880, 335, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED KINGDOM
 click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES
 click(454, 567, 1, 0, 'left'); sleep(4);
-click(724, 678, 1, 0, 'left');
-click(724, 658, 1, 0, 'left');
-click(724, 688, 1, 0, 'left'); sleep(4);
 # Get Domains # НАЧИНАЕМ ЮЗАТЬ ПОЧТУ ПОД АКК
 test = Email()
 print("\nDomain: " + test.domain)
