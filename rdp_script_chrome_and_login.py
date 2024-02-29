@@ -49,6 +49,9 @@ click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(
 # панели азура
 click(724, 678, 1, 0, 'left');
 click(724, 658, 1, 0, 'left');
+click(714, 777, 1, 0, 'left');
+click(724, 778, 1, 0, 'left');
+click(724, 768, 1, 0, 'left');
 click(724, 688, 1, 0, 'left'); sleep(20); # СКИПАЕМ ОКНО A quick note about your Microsoft account
 #click(880, 332, 1, 0, 'left'); click(880, 250, 1, 0, 'left'); click(880, 275, 1, 0, 'left'); click(880, 335, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED KINGDOM
 click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES
