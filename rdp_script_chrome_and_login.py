@@ -64,7 +64,7 @@ test.register(username=None, password='1534589', domain=None)
 print("\nEmail Adress: " + str(test.address))
 email_reserve = test.address; sleep(3)
 click(472, 540, 1, 0, 'left'); sleep(1);click(472, 550, 1, 0, 'left'); sleep(1);click(472, 560, 1, 0, 'left'); sleep(2);
-keyboard.write(email_reserve, delay=0.1); sleep(2); click(722, 674, 1, 0, 'left'); # вводим резерв почту и нажимаем ок
+keyboard.write(email_reserve, delay=0.1); sleep(2); click(722, 674, 1, 0, 'left'); click(720, 640, 1, 0, 'left'); # вводим резерв почту и нажимаем ок
 # Start listening
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
