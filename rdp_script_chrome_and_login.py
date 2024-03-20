@@ -83,7 +83,7 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 print(security_code_ready)
-sleep(5); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(721, 604, 1, 0, 'left'); sleep(20) # вводим секьюрити код 1
+sleep(20); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(721, 604, 1, 0, 'left'); sleep(20) # вводим секьюрити код 1
 click(538, 452, 1, 0, 'left'); sleep(6) # подтвердить для ввода резерва и второго кода доступа
 click(505, 505, 1, 0, 'left'); keyboard.write(email_reserve, delay=0.1); click(718, 594, 1, 0, 'left'); sleep(4) # вводим почту 2ой раз
 security_code = ''; security_code_ready = ''; text = ''; subject = ''
