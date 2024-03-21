@@ -69,9 +69,9 @@ keyboard.write(email_reserve, delay=0.1); sleep(2); click(722, 674, 1, 0, 'left'
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
 #time.sleep(45)
+print(text, 'ЛЕНА ШАС ДАМ ТЕБЕ КОД ПАДАЖИ ЧУТЬ-ЧУТЬ')
 while text == '':
     time.sleep(3)
-    print(text, 'проверка на наличие кода')
 #print(text, 'проверка на наличие кода')
 test.stop()
 list_of_text = text.split('\n')
