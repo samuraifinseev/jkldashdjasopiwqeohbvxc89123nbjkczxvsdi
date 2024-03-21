@@ -38,7 +38,8 @@ for i in tqdm(range(100)):
     time.sleep(0.3)
 click(1018, 770, 1, 0, 'left'); sleep(3); click(1018, 770, 1, 0, 'left'); sleep(3); click(693, 737, 1, 0, 'left'); sleep(3) # завершаем настройку хрома
 click(981, 27, 1, 0, 'left'); sleep(3) # хром на полный экран
-click(172, 58, 1, 0, 'left'); keyboard.write('azure.microsoft.com', 0,1); keyboard.send('enter'); sleep(12) # ввод azure.microsoft.com
+keyboard.write('https://portal.azure.com/', 0,1); sleep(12) # ввод portal.azure.com
+#click(172, 58, 1, 0, 'left'); keyboard.write('azure.microsoft.com', 0,1); keyboard.send('enter'); sleep(12) # ввод azure.microsoft.com
 #click(1153, 184, 1, 0, 'left'); sleep(10) # sign in UNITED KINGDOM
 click(1153, 115, 1, 0, 'left'); sleep(10) # sign in UNITED STATES
 click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(3) # email input
