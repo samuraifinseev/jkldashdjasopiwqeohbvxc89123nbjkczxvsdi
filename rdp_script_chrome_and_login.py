@@ -67,8 +67,8 @@ click(512, 295, 1, 0, 'left'); keyboard.write(reserve_mail_first, delay=0.1); sl
 click(374, 432, 1, 0, 'left'); sleep(4); #кликаем на письмо
 click(277, 503, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
 hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(2); hotkey('ctrl', 'v'); # копируем и вставляем
-click(725, 600, 1, 0, 'left'); # нажимаем верифи
-click(457, 613, 1, 0, 'left'); # Break free from your passwords
+click(725, 600, 1, 0, 'left'); sleep(4) # нажимаем верифи
+click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
 click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
@@ -98,9 +98,9 @@ keyboard.write(email_reserve, delay=0.1); sleep(2); click(658, 400, 1, 0, 'left'
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
 #time.sleep(45)
+print(text, 'проверка на наличие кода')
 while text == '':
     time.sleep(3)
-    print(text, 'проверка на наличие кода')
 #print(text, 'проверка на наличие кода')
 test.stop()
 list_of_text = text.split('\n')
