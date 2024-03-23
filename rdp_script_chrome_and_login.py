@@ -57,6 +57,14 @@ click(724, 688, 1, 0, 'left'); sleep(20); # СКИПАЕМ ОКНО A quick note
 click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES
 click(454, 567, 1, 0, 'left'); sleep(4);
 reserve_mail_first = account_email[:account_email.find('@')] + '@mailforspam.com';
+itog_text = ''
+while '-' in reserve_mail_first or '_' in reserve_mail_first:
+    if '_' in reserve_mail_first:
+        itog_test = reserve_mail_first[:reserve_mail_first.find('_')] + reserve_mail_first[reserve_mail_first.find('_') + 1:]
+    elif '-' in reserve_mail_first:
+        itog_test = reserve_mail_first[:reserve_mail_first.find('-')] + reserve_mail_first[reserve_mail_first.find('-') + 1:]
+    reserve_mail_first = itog_text
+#print(itog_test)
 click(537, 452, 1, 0, 'left'); sleep(4); # кликаем по мыло маилфорспам
 click(453, 511, 1, 0, 'left'); sleep(4); keyboard.write(reserve_mail_first, delay=0.1); sleep(4) # вводим резерв
 click(719, 600, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
