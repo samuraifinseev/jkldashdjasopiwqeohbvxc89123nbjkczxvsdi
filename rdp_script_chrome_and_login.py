@@ -61,7 +61,7 @@ click(537, 452, 1, 0, 'left'); sleep(4); # кликаем по мыло маил
 click(453, 511, 1, 0, 'left'); sleep(4); keyboard.write(reserve_mail_first, delay=0.1); sleep(4) # вводим резерв
 click(719, 600, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
 click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладку
-click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailforspam.com', delay=0.1); press('enter'); sleep(8) #кликаем на ввод резерва в поиске браузера и вводим
+click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailforspam.com', delay=0.1); press('enter'); sleep(8); press('f5'); sleep(8) #кликаем на ввод резерва в поиске браузера и вводим
 click(349, 599, 1, 0, 'left'); sleep(3);  click(396, 794, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
 click(512, 295, 1, 0, 'left'); keyboard.write(reserve_mail_first, delay=0.1); sleep(4); click(903, 295, 1, 0, 'left'); sleep(5) # вводим резерв и кликаем чек
 click(374, 432, 1, 0, 'left'); sleep(4); #кликаем на письмо
