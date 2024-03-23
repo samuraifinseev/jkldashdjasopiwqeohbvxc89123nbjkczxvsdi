@@ -87,7 +87,7 @@ click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем измене
 press('f5'); sleep(20) # refresh page
 #click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 #click(490, 485, 1, 0, 'left');
-click(465, 438, 1, 0, 'left');
+#click(446, 482, 1, 0, 'left');
 keyboard.write('56981488228Simak', delay=0.2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); sleep(2)
 click(717, 590, 1, 0, 'left')
 click(717, 610, 1, 0, 'left')
