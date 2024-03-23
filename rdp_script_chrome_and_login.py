@@ -114,47 +114,12 @@ for i in range(len(security_code)):
 print(security_code_ready)
 keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 'left'); sleep(10) # вводим сек КОД
 click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 543, 1, 0, 'left'); sleep(10); click(698, 543, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
-click(335, 816, 1, 0, 'left'); sleep(7); click(683, 541, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); # удаляем сот тел
-click(146, 17, 1, 0, 'left'); # переход на гл странницу
-click(538, 452, 1, 0, 'left'); sleep(6) # подтвердить для ввода резерва и второго кода доступа
-click(505, 505, 1, 0, 'left'); keyboard.write(email_reserve, delay=0.1); click(718, 594, 1, 0, 'left'); sleep(4) # вводим почту 2ой раз
-security_code = ''; security_code_ready = ''; text = ''; subject = ''
-# Start listening ПОЛУЧАЕМ КОД
-test.start(listener, interval=3)
-print("\nWaiting for new emails...")
-while text == '':
-    time.sleep(3)
-    print(text, 'проверка на наличие кода')
-#time.sleep(33)
-test.stop()
-list_of_text = text.split('\n')
-for i in range(len(list_of_text)):
-    if 'Security code' in list_of_text[i]:
-            security_code = list_of_text[i]
-security_code_ready = str()
-for i in range(len(security_code)):
-    if security_code[i].isdigit():
-        security_code_ready += security_code[i]
+sleep(2)
+scroll(-400); sleep(2)
+click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); # удаляем сот тел
+click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
+click(231, 253, 1, 0, 'left'); sleep(5); click(874, 110, 1, 0, 'left'); # вм и колокольчик
 
-click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(711, 598, 1, 0, 'left'); sleep(25) # вводим секьюрити код 2
-click(447, 605, 1, 0, 'left'); sleep(25) # отказываемся от доп защиты с пассом
-click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
-click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
-click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
-click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем изменение пасса
-press('f5'); sleep(20) # refresh page
-#click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
-#click(490, 485, 1, 0, 'left');
-#click(446, 482, 1, 0, 'left');
-keyboard.write('56981488228Simak', delay=0.2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); sleep(2)
-click(717, 590, 1, 0, 'left')
-click(717, 610, 1, 0, 'left')
-click(718, 600, 1, 0, 'left')
-sleep(20) # перелогин на случай вылета из панели
-click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(19) # закрываем еще одно окно навязывания хуйни для защиты
-click(717, 621, 1, 0, 'left'); sleep(20); # переходим в секьюрити
-scroll(-3200); sleep(2); click(123, 725, 1, 0, 'left'); sleep(7); click(491, 551, 1, 0, 'left'); sleep(2) # скролим вниз и генерим новый код и подтверждаем
-click(132, 17, 1, 0, 'left'); sleep(2); click(224, 234, 1, 0, 'left'); sleep(7); click(116, 105, 1, 0, 'left'); # обновляем страничку азур путем кликами по иконкам :)
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
 now_time = str(datetime.now())
@@ -165,4 +130,4 @@ print(requests.get(url).json()) # Эта строка отсылает сооб�
 ##################
 print('ГОТОВО. АККАУНТ ЗАПРИВАЧЕН)\n\n'
       'резервная почта аккаунта:', email_reserve)
-sleep(7200)
+sleep(17200)
