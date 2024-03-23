@@ -112,7 +112,10 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 print(security_code_ready)
-keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 'left'); sleep(20) # вводим сек КОД
+keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 'left'); sleep(10) # вводим сек КОД
+click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 543, 1, 0, 'left'); sleep(10); click(698, 543, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
+click(335, 816, 1, 0, 'left'); sleep(7); click(683, 541, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); # удаляем сот тел
+click(146, 17, 1, 0, 'left'); # переход на гл странницу
 click(538, 452, 1, 0, 'left'); sleep(6) # подтвердить для ввода резерва и второго кода доступа
 click(505, 505, 1, 0, 'left'); keyboard.write(email_reserve, delay=0.1); click(718, 594, 1, 0, 'left'); sleep(4) # вводим почту 2ой раз
 security_code = ''; security_code_ready = ''; text = ''; subject = ''
