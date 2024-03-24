@@ -127,7 +127,7 @@ keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 
 click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 543, 1, 0, 'left'); sleep(10); click(698, 543, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
 sleep(2)
 scroll(-400); sleep(2)
-click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 521, 1, 0, 'left'); sleep(10); # удаляем сот тел
+click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 534, 1, 0, 'left'); sleep(10); # удаляем сот тел
 click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
 click(231, 253, 1, 0, 'left'); sleep(5); click(840, 110, 1, 0, 'left'); # вм и колокольчик
 
