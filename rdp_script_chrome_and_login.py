@@ -87,7 +87,7 @@ click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем измене
 press('f5'); sleep(20) # refresh page
 #click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 #click(490, 485, 1, 0, 'left');
-#click(446, 482, 1, 0, 'left');
+click(446, 482, 1, 0, 'left');
 keyboard.write('56981488228Simak', delay=0.2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); sleep(2)
 click(717, 590, 1, 0, 'left')
 click(717, 610, 1, 0, 'left')
@@ -124,12 +124,12 @@ for i in range(len(security_code)):
         security_code_ready += security_code[i]
 print(security_code_ready)
 keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 'left'); sleep(10) # вводим сек КОД
-click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 543, 1, 0, 'left'); sleep(10); click(698, 543, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
+click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 535, 1, 0, 'left'); sleep(10); click(679, 526, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
 sleep(2)
 scroll(-400); sleep(4)
 click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 534, 1, 0, 'left'); sleep(10); # удаляем сот тел
 click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
-click(231, 253, 1, 0, 'left'); sleep(5); click(840, 110, 1, 0, 'left'); # вм и колокольчик
+click(231, 253, 1, 0, 'left'); sleep(5); click(894, 106, 1, 0, 'left'); # вм и колокольчик
 
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
