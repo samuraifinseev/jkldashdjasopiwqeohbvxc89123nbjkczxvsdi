@@ -129,7 +129,7 @@ sleep(2)
 scroll(-400); sleep(4)
 click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 534, 1, 0, 'left'); sleep(10); # удаляем сот тел
 click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
-click(231, 253, 1, 0, 'left'); sleep(5); click(876, 104, 1, 0, 'left'); # вм и колокольчик
+click(231, 253, 1, 0, 'left'); sleep(5); #click(876, 104, 1, 0, 'left'); # вм и колокольчик
 
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
