@@ -104,7 +104,7 @@ print("\nDomain: " + test.domain)
 test.register(username=None, password='1534589', domain=None)
 print("\nEmail Adress: " + str(test.address))
 email_reserve = test.address; sleep(3)
-keyboard.write(email_reserve, delay=0.1); sleep(2); click(658, 400, 1, 0, 'left'); sleep(2) # вводим резерв почту и нажимаем ок
+keyboard.write(email_reserve, delay=0.1); sleep(2); click(658, 400, 1, 0, 'left'); sleep(8) # вводим резерв почту и нажимаем ок
 # Start listening
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
@@ -126,7 +126,7 @@ print(security_code_ready)
 keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 'left'); sleep(10) # вводим сек КОД
 click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 543, 1, 0, 'left'); sleep(10); click(698, 543, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
 sleep(2)
-scroll(-400); sleep(2)
+scroll(-400); sleep(4)
 click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 534, 1, 0, 'left'); sleep(10); # удаляем сот тел
 click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
 click(231, 253, 1, 0, 'left'); sleep(5); click(840, 110, 1, 0, 'left'); # вм и колокольчик
