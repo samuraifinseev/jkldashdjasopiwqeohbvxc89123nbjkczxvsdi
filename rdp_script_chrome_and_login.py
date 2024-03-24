@@ -78,7 +78,7 @@ click(798, 143, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(4); click(
 click(177, 373, 1, 0, 'left'); sleep(4); #кликаем на письмо
 click(116, 582, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
 hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(2); hotkey('ctrl', 'v'); # копируем и вставляем
-click(725, 600, 1, 0, 'left'); sleep(4) # нажимаем верифи
+click(725, 600, 1, 0, 'left'); sleep(8) # нажимаем верифи
 click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
 click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
@@ -87,8 +87,8 @@ click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем измене
 press('f5'); sleep(20) # refresh page
 #click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
 #click(490, 485, 1, 0, 'left');
-click(446, 482, 1, 0, 'left');
-keyboard.write('56981488228Simak', delay=0.2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); sleep(2)
+click(457, 455, 1, 0, 'left');
+keyboard.write('56981488228Simak', delay=0.2); sleep(2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); click(713, 604, 1, 0, 'left');
 click(717, 590, 1, 0, 'left')
 click(717, 610, 1, 0, 'left')
 click(718, 600, 1, 0, 'left')
