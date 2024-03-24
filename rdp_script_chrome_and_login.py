@@ -70,7 +70,7 @@ print(itog_test)
 #==========
 click(537, 452, 1, 0, 'left'); sleep(4); # кликаем по мыло маилфорспам
 click(453, 511, 1, 0, 'left'); sleep(4); keyboard.write(test, delay=0.1); sleep(4) # вводим резерв
-click(719, 600, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
+click(719, 600, 1, 0, 'left'); click(725, 610, 1, 0, 'left'); click(725, 590, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
 click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладку
 click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailnesia.com', delay=0.1); press('enter'); sleep(8); press('f5'); sleep(8) #кликаем на ввод резерва в поиске браузера и вводим
 #click(349, 599, 1, 0, 'left'); sleep(3);  click(396, 794, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
@@ -129,7 +129,7 @@ sleep(2)
 scroll(-400); sleep(4)
 click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 534, 1, 0, 'left'); sleep(10); # удаляем сот тел
 click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
-click(231, 253, 1, 0, 'left'); sleep(5); click(835, 111, 1, 0, 'left'); # вм и колокольчик
+click(231, 253, 1, 0, 'left'); sleep(5); click(876, 104, 1, 0, 'left'); # вм и колокольчик
 
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
