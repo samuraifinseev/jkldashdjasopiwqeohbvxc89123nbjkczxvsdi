@@ -74,7 +74,7 @@ click(719, 600, 1, 0, 'left'); click(725, 610, 1, 0, 'left'); click(725, 590, 1,
 click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладку
 click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('https://m.mailnesia.com/', delay=0.1); press('enter'); sleep(10); press('f5'); sleep(12) #кликаем на ввод резерва в поиске браузера и вводим
 #click(349, 599, 1, 0, 'left'); sleep(3);  click(396, 794, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
-click(798, 114, 1, 0, 'left'); keyboard.write(test[:test.find('@')], delay=0.1); sleep(4); click(1145, 112, 1, 0, 'left'); sleep(30) # вводим резерв и кликаем чек форспам
+click(798, 114, 1, 0, 'left'); keyboard.write(test[:test.find('@')], delay=0.1); sleep(2); click(1145, 112, 1, 0, 'left'); sleep(20); press('f5'); sleep(20) # вводим резерв и кликаем чек форспам
 click(219, 373, 1, 0, 'left'); sleep(4); #кликаем на письмо
 click(101, 416, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
 hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(2); hotkey('ctrl', 'v'); # копируем и вставляем
