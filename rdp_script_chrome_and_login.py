@@ -75,9 +75,9 @@ click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладк�
 click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailforspam.com', delay=0.1); press('enter'); sleep(10); press('f5'); sleep(12) #кликаем на ввод резерва в поиске браузера и вводим
 click(349, 599, 1, 0, 'left'); sleep(3);  click(428, 772, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
 click(513, 292, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(8); click(900, 290, 1, 0, 'left'); sleep(3) # вводим резерв и кликаем чек форспам
-click(415, 425, 1, 0, 'left'); sleep(4); #кликаем на письмо
-click(276, 503, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
-hotkey('ctrl', 'c'); sleep(3); click(370, 501, 1, 0, 'left'); sleep(3); click(276, 503, 2, 0, 'left'); sleep(3); hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(4); hotkey('ctrl', 'v'); sleep(55) # копируем и вставляем
+click(415, 425, 1, 0, 'left'); sleep(7); #кликаем на письмо
+click(276, 503, 2, 0, 'left'); sleep(random.randint(4, 55)); #кликаем на код 2 раза и выделяем его
+hotkey('ctrl', 'c'); sleep(3); click(370, 501, 1, 0, 'left'); sleep(3); click(276, 503, 2, 0, 'left'); sleep(3); hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(4); hotkey('ctrl', 'v'); sleep(8) # копируем и вставляем
 click(725, 600, 1, 0, 'left'); sleep(8) # нажимаем верифи
 click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
