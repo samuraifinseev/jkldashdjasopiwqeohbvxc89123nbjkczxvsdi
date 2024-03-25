@@ -72,11 +72,11 @@ click(537, 452, 1, 0, 'left'); sleep(4); # кликаем по мыло маил
 click(453, 511, 1, 0, 'left'); sleep(4); keyboard.write(test, delay=0.1); sleep(4) # вводим резерв
 click(719, 600, 1, 0, 'left'); click(725, 610, 1, 0, 'left'); click(725, 590, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
 click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладку
-click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailnesia.com', delay=0.1); press('enter'); sleep(8); press('f5'); sleep(8) #кликаем на ввод резерва в поиске браузера и вводим
+click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('https://m.mailnesia.com/', delay=0.1); press('enter'); sleep(10); press('f5'); sleep(8) #кликаем на ввод резерва в поиске браузера и вводим
 #click(349, 599, 1, 0, 'left'); sleep(3);  click(396, 794, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
-click(798, 143, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(4); click(1090, 142, 1, 0, 'left'); sleep(8) # вводим резерв и кликаем чек форспам
-click(177, 373, 1, 0, 'left'); sleep(4); #кликаем на письмо
-click(116, 582, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
+click(798, 114, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(4); click(1145, 112, 1, 0, 'left'); sleep(30) # вводим резерв и кликаем чек форспам
+click(219, 373, 1, 0, 'left'); sleep(4); #кликаем на письмо
+click(101, 416, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
 hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(2); hotkey('ctrl', 'v'); # копируем и вставляем
 click(725, 600, 1, 0, 'left'); sleep(8) # нажимаем верифи
 click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
