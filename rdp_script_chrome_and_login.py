@@ -56,7 +56,7 @@ click(724, 688, 1, 0, 'left'); sleep(20); # СКИПАЕМ ОКНО A quick note
 #click(880, 332, 1, 0, 'left'); click(880, 250, 1, 0, 'left'); click(880, 275, 1, 0, 'left'); click(880, 335, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED KINGDOM
 click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); click(880, 262, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES and russia
 click(454, 567, 1, 0, 'left'); sleep(4);
-reserve_mail_first = account_email[:account_email.find('@')] + '@mailnesia.com';
+reserve_mail_first = account_email[:account_email.find('@')] + '@mailforspam.com';
 #===========
 test = reserve_mail_first
 itog_test = ''
@@ -72,11 +72,11 @@ click(537, 452, 1, 0, 'left'); sleep(4); # кликаем по мыло маил
 click(453, 511, 1, 0, 'left'); sleep(4); keyboard.write(test, delay=0.1); sleep(4) # вводим резерв
 click(719, 600, 1, 0, 'left'); click(725, 610, 1, 0, 'left'); click(725, 590, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
 click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладку
-click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('https://m.mailnesia.com/', delay=0.1); press('enter'); sleep(10); press('f5'); sleep(12) #кликаем на ввод резерва в поиске браузера и вводим
-#click(349, 599, 1, 0, 'left'); sleep(3);  click(396, 794, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
-click(798, 114, 1, 0, 'left'); keyboard.write(test[:test.find('@')], delay=0.1); sleep(2); click(1145, 112, 1, 0, 'left'); sleep(20); press('f5'); sleep(20) # вводим резерв и кликаем чек форспам
-click(219, 373, 1, 0, 'left'); sleep(4); #кликаем на письмо
-click(101, 416, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
+click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailforspam.com', delay=0.1); press('enter'); sleep(10); press('f5'); sleep(12) #кликаем на ввод резерва в поиске браузера и вводим
+click(349, 599, 1, 0, 'left'); sleep(3);  click(396, 794, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
+click(513, 292, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(8); click(900, 290, 1, 0, 'left'); sleep(3) # вводим резерв и кликаем чек форспам
+click(415, 425, 1, 0, 'left'); sleep(4); #кликаем на письмо
+click(276, 503, 2, 0, 'left'); sleep(4); #кликаем на код 2 раза и выделяем его
 hotkey('ctrl', 'c'); sleep(2); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(2); hotkey('ctrl', 'v'); # копируем и вставляем
 click(725, 600, 1, 0, 'left'); sleep(8) # нажимаем верифи
 click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
