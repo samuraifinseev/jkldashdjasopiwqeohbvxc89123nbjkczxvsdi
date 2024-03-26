@@ -77,7 +77,7 @@ click(349, 599, 1, 0, 'left'); sleep(3);  click(428, 772, 1, 0, 'left'); sleep(1
 click(513, 292, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(8); click(900, 290, 1, 0, 'left'); sleep(3) # вводим резерв и кликаем чек форспам
 click(415, 425, 1, 0, 'left'); sleep(7); #кликаем на письмо
 click(276, 503, 2, 0, 'left'); sleep(random.randint(4, 8)); #кликаем на код 2 раза и выделяем его
-hotkey('ctrl', 'c'); sleep(3); click(370, 501, 1, 0, 'left'); sleep(3); click(276, 503, 2, 0, 'left'); sleep(3); hotkey('ctrl', 'c'); sleep(75); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(4); hotkey('ctrl', 'v'); sleep(8) # копируем и вставляем
+hotkey('ctrl', 'c'); sleep(3); click(370, 501, 1, 0, 'left'); sleep(3); click(276, 503, 2, 0, 'left'); sleep(3); hotkey('ctrl', 'c'); sleep(80); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(4); hotkey('ctrl', 'v'); sleep(8) # копируем и вставляем
 click(725, 600, 1, 0, 'left'); sleep(8) # нажимаем верифи
 click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
 click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
