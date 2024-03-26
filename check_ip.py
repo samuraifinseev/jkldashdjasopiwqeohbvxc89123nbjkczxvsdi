@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 import serviceping
 number_of_active_m = 0
 for i in range(2, 254):
