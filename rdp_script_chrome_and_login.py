@@ -36,15 +36,15 @@ for i in range(len(list_of_accs_inf)):
         break
 for i in tqdm(range(100)):
     time.sleep(0.3)
-click(1018, 770, 1, 0, 'left'); sleep(3); click(1018, 770, 1, 0, 'left'); sleep(3); click(693, 714, 1, 0, 'left'); sleep(3); click(700, 737, 1, 0, 'left'); sleep(3) # завершаем настройку хрома
+click(1018, 770, 1, 0, 'left'); sleep(3); click(1018, 770, 1, 0, 'left'); sleep(3); click(693, 714, 1, 0, 'left'); sleep(3); sleep(3); click(700, 737, 1, 0, 'left'); sleep(3) # завершаем настройку хрома
 click(981, 27, 1, 0, 'left'); sleep(3) # хром на полный экран
 click(172, 58, 1, 0, 'left'); keyboard.write('portal.azure.com', 0,1); keyboard.send('enter'); sleep(12) # ввод azure.microsoft.com
 #click(1153, 184, 1, 0, 'left'); sleep(10) # sign in UNITED KINGDOM
 click(1153, 115, 1, 0, 'left'); sleep(10) # sign in UNITED STATES
 click(475, 414, 1, 0, 'left'); keyboard.write(account_email, delay=0.2); sleep(1); click(720, 538, 1, 0, 'left'); sleep(3) # email input
-click(475, 482, 1, 0, 'left'); click(475, 500, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(8) # password input
+click(475, 482, 1, 0, 'left'); click(475, 500, 1, 0, 'left'); keyboard.write(account_password, delay=0.2); sleep(1); click(717, 606, 1, 0, 'left'); sleep(5) # password input
 click(1020, 366, 1, 0, 'left') # отменить сохранение данных лог пасса
-sleep(2); click(719, 596, 1, 0, 'left'); sleep(random.randint(30, 210)) # password save and stay sign in
+sleep(2); click(719, 596, 1, 0, 'left'); sleep(30) # password save and stay sign in
 click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(20); # переходим в настройки акка из
 # панели азура
 click(724, 678, 1, 0, 'left');
@@ -54,55 +54,8 @@ click(724, 778, 1, 0, 'left');
 click(724, 768, 1, 0, 'left');
 click(724, 688, 1, 0, 'left'); sleep(20); # СКИПАЕМ ОКНО A quick note about your Microsoft account
 #click(880, 332, 1, 0, 'left'); click(880, 250, 1, 0, 'left'); click(880, 275, 1, 0, 'left'); click(880, 335, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED KINGDOM
-click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); click(880, 262, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES and russia
+click(880, 210, 1, 0, 'left'); click(880, 200, 1, 0, 'left'); sleep(8) # нажимаем изменить пасс кнопку UNITED STATES
 click(454, 567, 1, 0, 'left'); sleep(4);
-reserve_mail_first = account_email[:account_email.find('@')] + '@mailforspam.com';
-#===========
-test = reserve_mail_first
-itog_test = ''
-while '-' in test or '_' in test:
-    if '_' in test:
-        itog_test = test[:test.find('_')] + test[test.find('_') + 1:]
-    elif '-' in test:
-        itog_test = test[:test.find('-')] + test[test.find('-') + 1:]
-    test = itog_test
-print(itog_test)
-#==========
-click(537, 452, 1, 0, 'left'); sleep(4); # кликаем по мыло маилфорспам
-click(453, 511, 1, 0, 'left'); sleep(4); keyboard.write(test, delay=0.1); sleep(4) # вводим резерв
-click(719, 600, 1, 0, 'left'); click(725, 610, 1, 0, 'left'); click(725, 590, 1, 0, 'left'); sleep(4); #отправляем код на резерв почту
-click(526, 20, 1, 0, 'left'); sleep(4); #создаем новую вкладку
-click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailforspam.com', delay=0.1); press('enter'); sleep(10); press('f5'); sleep(12) #кликаем на ввод резерва в поиске браузера и вводим
-click(349, 599, 1, 0, 'left'); sleep(3);  click(428, 772, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
-click(513, 292, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(8); click(900, 290, 1, 0, 'left'); sleep(3) # вводим резерв и кликаем чек форспам
-click(415, 425, 1, 0, 'left'); sleep(7); #кликаем на письмо
-click(276, 503, 2, 0, 'left'); sleep(random.randint(4, 8)); #кликаем на код 2 раза и выделяем его
-hotkey('ctrl', 'c'); sleep(3); click(370, 501, 1, 0, 'left'); sleep(3); click(276, 503, 2, 0, 'left'); sleep(3); hotkey('ctrl', 'c'); sleep(80); click(370, 22, 1, 0, 'left'); sleep(4); click(460, 508, 1, 0, 'left'); sleep(4); hotkey('ctrl', 'v'); sleep(8) # копируем и вставляем
-click(725, 600, 1, 0, 'left'); sleep(8) # нажимаем верифи
-click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
-click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
-click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
-click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
-click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем изменение пасса
-press('f5'); sleep(20) # refresh page
-#click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
-#click(490, 485, 1, 0, 'left');
-#click(457, 435, 1, 0, 'left');
-keyboard.write('56981488228Simak', delay=0.2); sleep(2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); click(713, 604, 1, 0, 'left');
-click(717, 590, 1, 0, 'left')
-click(717, 580, 1, 0, 'left')
-click(717, 570, 1, 0, 'left')
-click(717, 620, 1, 0, 'left')
-click(717, 630, 1, 0, 'left')
-click(717, 640, 1, 0, 'left')
-click(717, 590, 1, 0, 'left')
-click(717, 610, 1, 0, 'left')
-click(718, 600, 1, 0, 'left')
-sleep(20) # перелогин на случай вылета из панели
-click(726, 543, 1, 0, 'left'); sleep(8) # advanced sec options
-click(259, 750, 1, 0, 'left'); sleep(8) # add a new way to sign in
-click(518, 417, 1, 0, 'left'); sleep(8) # жмем на выбор мыла
-
 # Get Domains # НАЧИНАЕМ ЮЗАТЬ ПОЧТУ ПОД АКК
 test = Email()
 print("\nDomain: " + test.domain)
@@ -110,7 +63,8 @@ print("\nDomain: " + test.domain)
 test.register(username=None, password='1534589', domain=None)
 print("\nEmail Adress: " + str(test.address))
 email_reserve = test.address; sleep(3)
-keyboard.write(email_reserve, delay=0.1); sleep(2); click(658, 400, 1, 0, 'left'); sleep(8) # вводим резерв почту и нажимаем ок
+click(472, 540, 1, 0, 'left'); sleep(1);click(472, 550, 1, 0, 'left'); sleep(1);click(472, 560, 1, 0, 'left'); sleep(2);
+keyboard.write(email_reserve, delay=0.1); sleep(2); click(722, 674, 1, 0, 'left'); click(720, 640, 1, 0, 'left'); # вводим резерв почту и нажимаем ок
 # Start listening
 test.start(listener, interval=3)
 print("\nWaiting for new emails...")
@@ -129,14 +83,46 @@ for i in range(len(security_code)):
     if security_code[i].isdigit():
         security_code_ready += security_code[i]
 print(security_code_ready)
-keyboard.write(security_code_ready, delay=0.2); sleep(5); click(681, 385, 1, 0, 'left'); sleep(10) # вводим сек КОД
-click(578, 625, 1, 0, 'left'); sleep(7); click(328, 838, 1, 0, 'left'); sleep(7); click(698, 535, 1, 0, 'left'); sleep(10); click(679, 526, 1, 0, 'left'); sleep(8); # удаляем мыло форспам
-sleep(2)
-scroll(-400); sleep(4)
-click(278, 357, 1, 0, 'left'); sleep(7); click(341, 577, 1, 0, 'left'); sleep(10); click(683, 541, 1, 0, 'left'); sleep(10); click(678, 534, 1, 0, 'left'); sleep(2); # удаляем сот тел
-click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # переход на гл странницу
-click(231, 253, 1, 0, 'left'); sleep(5); #click(876, 104, 1, 0, 'left'); # вм и колокольчик
+sleep(5); click(440, 480, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(721, 604, 1, 0, 'left'); sleep(20) # вводим секьюрити код 1
+click(538, 452, 1, 0, 'left'); sleep(6) # подтвердить для ввода резерва и второго кода доступа
+click(505, 505, 1, 0, 'left'); keyboard.write(email_reserve, delay=0.1); click(718, 594, 1, 0, 'left'); sleep(4) # вводим почту 2ой раз
+security_code = ''; security_code_ready = ''; text = ''; subject = ''
+# Start listening ПОЛУЧАЕМ КОД
+test.start(listener, interval=3)
+print("\nWaiting for new emails...")
+while text == '':
+    time.sleep(3)
+    print(text, 'проверка на наличие кода')
+#time.sleep(33)
+test.stop()
+list_of_text = text.split('\n')
+for i in range(len(list_of_text)):
+    if 'Security code' in list_of_text[i]:
+            security_code = list_of_text[i]
+security_code_ready = str()
+for i in range(len(security_code)):
+    if security_code[i].isdigit():
+        security_code_ready += security_code[i]
 
+click(444, 504, 1, 0, 'left'); keyboard.write(security_code_ready, delay=0.2); sleep(5); click(711, 598, 1, 0, 'left'); sleep(25) # вводим секьюрити код 2
+click(447, 605, 1, 0, 'left'); sleep(25) # отказываемся от доп защиты с пассом
+click(97, 297, 1, 0, 'left'); keyboard.write(account_password, delay=0.1); sleep(1.5) # вводим старый пасс
+click(88, 388, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 1
+click(102, 489, 1, 0, 'left'); keyboard.write('56981488228Simak', delay=0.1); sleep(1.5) # вводим новый пасс 2
+click(110, 629, 1, 0, 'left'); sleep(18) # подтверждаем изменение пасса
+press('f5'); sleep(20) # refresh page
+#click(1020, 366, 1, 0, 'left'); sleep(4) # отменить сохранение данных лог пасса
+#click(490, 485, 1, 0, 'left');
+#click(446, 482, 1, 0, 'left');
+keyboard.write('56981488228Simak', delay=0.2); click(717, 645, 1, 0, 'left'); click(717, 655, 1, 0, 'left'); click(717, 635, 1, 0, 'left'); sleep(2)
+click(717, 590, 1, 0, 'left')
+click(717, 610, 1, 0, 'left')
+click(718, 600, 1, 0, 'left')
+sleep(20) # перелогин на случай вылета из панели
+click(1010, 362, 1, 0, 'left'); click(806, 142, 1, 0, 'left'); sleep(19) # закрываем еще одно окно навязывания хуйни для защиты
+click(717, 621, 1, 0, 'left'); sleep(20); # переходим в секьюрити
+scroll(-3200); sleep(2); click(123, 725, 1, 0, 'left'); sleep(7); click(491, 551, 1, 0, 'left'); sleep(2) # скролим вниз и генерим новый код и подтверждаем
+click(132, 17, 1, 0, 'left'); sleep(2); click(224, 234, 1, 0, 'left'); sleep(7); click(116, 105, 1, 0, 'left'); # обновляем страничку азур путем кликами по иконкам :)
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
 now_time = str(datetime.now())
@@ -147,4 +133,4 @@ print(requests.get(url).json()) # Эта строка отсылает сооб�
 ##################
 print('ГОТОВО. АККАУНТ ЗАПРИВАЧЕН)\n\n'
       'резервная почта аккаунта:', email_reserve)
-sleep(17200)
+sleep(7200)
