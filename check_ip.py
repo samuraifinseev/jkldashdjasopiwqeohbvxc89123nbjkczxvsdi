@@ -16,7 +16,7 @@ print('активных майнеров - ', number_of_active_m)
 #apt install python -y
 #apt install python pip -y
 #pip install serviceping
-#mkdir py
+#mkdir py3
 #cd py
 #wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/check_ip.py
 #chmod +x check_ip.py
