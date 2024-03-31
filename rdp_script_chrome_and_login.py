@@ -76,7 +76,7 @@ click(178, 63, 1, 0, 'left'); sleep(4); keyboard.write('mailforspam.com', delay=
 click(349, 599, 1, 0, 'left'); sleep(3);  click(428, 772, 1, 0, 'left'); sleep(10); # на случай если вылезет Your connection is not private
 click(513, 292, 1, 0, 'left'); keyboard.write(test, delay=0.1); sleep(8); click(900, 290, 1, 0, 'left'); sleep(3) # вводим резерв и кликаем чек форспам
 click(415, 425, 1, 0, 'left'); sleep(7); #кликаем на письмо
-click(276, 503, 2, 0, 'left'); sleep(random.randrange(30, 220)); #кликаем на код 2 раза и выделяем его
+click(276, 503, 2, 0, 'left'); sleep(random.randrange(45, 140)); #кликаем на код 2 раза и выделяем его
 hotkey('ctrl', 'c'); sleep(1); click(370, 22, 1, 0, 'left'); sleep(3); click(460, 508, 1, 0, 'left'); sleep(1); hotkey('ctrl', 'v'); sleep(2) # копируем и вставляем
 click(725, 600, 1, 0, 'left'); sleep(20) # нажимаем верифи
 click(457, 613, 1, 0, 'left'); sleep(11) # Break free from your passwords
