@@ -16,7 +16,7 @@ ip_address = response.text
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "5725759489:AAGHJghIdbSZhHglu7mi36p0G_0tvgz_MKM"
 chat_id = '506640934'
-message =f'Сервер: {ip_address} \n Кол-во активных позиций: {number_of_active_m}'
+message = f'Сервер: {ip_address} \n Кол-во активных позиций: {number_of_active_m}'
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
 print(requests.get(url).json()) # Эта строка отсылает сообщение
 ##################
