@@ -138,7 +138,7 @@ click(146, 17, 1, 0, 'left'); sleep(5); click(139, 114, 1, 0, 'left'); # пер�
 click(231, 253, 1, 0, 'left'); sleep(5); #click(876, 104, 1, 0, 'left'); # вм и колокольчик
 
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
-TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
+TOKEN = "5497125758:AAG9uB4teA5cIEpd-ONSjvcBMokj8EZFGnE"
 now_time = str(datetime.now())
 chat_id = '506640934'
 message ='===================\n' + '[RDP] POSTAVIL NA ACC: \n' + stroka_acca + '\n' +  now_time + '\n' +  email_reserve + '\n===================\n'
