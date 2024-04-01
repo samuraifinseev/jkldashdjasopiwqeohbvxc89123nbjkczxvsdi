@@ -1,0 +1,21 @@
+import serviceping, requests
+number_of_rdps = 0
+number_of_disable_rdps = 0
+rdp_ip_file = open('rdp_ip.txt')
+rdp_ip = rdp_ip_file.read()
+list_rdp_ips = rdp_ip.split('\n')
+for i in range(len(list_rdp_ips)):
+    status_rdp = serviceping.scan(list_rdp_ips[i], '3389')
+    if status_rdp['state'] == 'open':
+        number_of_rdps += 1
+    else:
+        number_of_disable_rdps += 1
+print("МЕРТВЫЕ РДП - ", number_of_disable_rdps)
+print("ЖИВЫЕ РДП - ", number_of_rdps)
+################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
+TOKEN = "5725759489:AAGHJghIdbSZhHglu7mi36p0G_0tvgz_MKM"
+chat_id = '506640934'
+message = f'========================================================\n ACTIVE RDPS: [{number_of_rdps}]\n DISABLE RDPS: [{number_of_disable_rdps}]\n========================================================'
+url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
+print(requests.get(url).json()) # Эта строка отсылает сообщение
+##################
