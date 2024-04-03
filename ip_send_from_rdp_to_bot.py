@@ -41,15 +41,15 @@ try:
         from_rdp_to_tg(ips_serv_group, 2)
         print(ips_serv_group)
     if len(list_of_vms_info) == 12:
-        ips_serv_group = sort_ips_from_file(list_of_vms_info, 8, 12)
+        ips_serv_group = sort_ips_from_file(list_of_vms_info, 7, 12)
         from_rdp_to_tg(ips_serv_group, 3)
         print(ips_serv_group)
     if len(list_of_vms_info) == 17:
-        ips_serv_group = sort_ips_from_file(list_of_vms_info, 13, 17)
+        ips_serv_group = sort_ips_from_file(list_of_vms_info, 12, 17)
         from_rdp_to_tg(ips_serv_group, 4)
         print(ips_serv_group)
     if len(list_of_vms_info) == 16:
-        ips_serv_group = sort_ips_from_file(list_of_vms_info, 13, 16)
+        ips_serv_group = sort_ips_from_file(list_of_vms_info, 12, 16)
         from_rdp_to_tg(ips_serv_group, 4)
         print(ips_serv_group)
     if len(list_of_vms_info) != 17 and len(list_of_vms_info) != 13 and len(list_of_vms_info) != 8 and len(list_of_vms_info) != 3 and len(list_of_vms_info) != 16:
