@@ -59,6 +59,6 @@ try:
 except:
     TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
     chat_id = '506640934'
-    message = 'RDP IP_ADRESS: ' + ip_address_rdp + '\n[' 'АККАУНТ ВО ФРОДЕ / ЛИБО ДРУГАЯ ОШИБКА' + ']\n' + '=================\n'
+    message = '[PW5] RDP IP_ADRESS: ' + ip_address_rdp + '\n[' 'АККАУНТ ВО ФРОДЕ / ЛИБО ДРУГАЯ ОШИБКА' + ']\n' + '=================\n'
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json())
