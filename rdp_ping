@@ -23,4 +23,4 @@ print(requests.get(url).json()) # Эта строка отсылает сооб�
 ##################
 
 
-#tmux new -ds RDP bash -c "while true; do tmux new -ds RDPS python3 ./rdp_ping; sleep 900; done"
+#tmux new -ds RDP bash -c "while true; do tmux new -ds RDPS python3 ./rdp_ping.py; sleep 900; done"
