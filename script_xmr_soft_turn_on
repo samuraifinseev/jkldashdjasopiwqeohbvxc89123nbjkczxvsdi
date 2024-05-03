@@ -35,6 +35,8 @@ chmod ugo+x trade_cpo
 sudo systemctl enable cron
 crontab -l | { cat; echo "@reboot /home/azureuser/cpo2"; } | crontab
 crontab -l | { cat; echo "0,30 * * * * /home/azureuser/trade_cpo"; } | crontab
+crontab -l | { cat; echo "sudo /usr/sbin/sysctl -w vm.nr_hugepages=1200"; } | crontab
+crontab -l | { cat; echo "/usr/sbin/sysctl -w vm.nr_hugepages=1200"; } | crontab
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
 sudo echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
