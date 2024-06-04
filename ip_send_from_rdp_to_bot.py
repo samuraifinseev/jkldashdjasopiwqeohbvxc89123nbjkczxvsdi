@@ -9,7 +9,7 @@ try:
 except:
     ip_address_rdp = 'NONE_FAILED'
 try:
-    del list_of_vms_info[0]; #del list_of_vms_info[len(list_of_vms_info) - 1] АПДЕЙТ ОТ 04 06 17:20 УБРАЛ ДЕЛ ПОСЛЕДНЕГО ИНДЕКСА
+    del list_of_vms_info[0]; del list_of_vms_info[len(list_of_vms_info) - 1]
     for i in range(len(list_of_vms_info)):
         list_of_vms_info[i] = list_of_vms_info[i][list_of_vms_info[i].find('IPAddresses'):]
     list_of_vms_info.sort() # ОТСОРТИРОВАЛИ
