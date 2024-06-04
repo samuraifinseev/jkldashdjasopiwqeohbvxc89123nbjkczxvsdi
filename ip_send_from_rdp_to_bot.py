@@ -9,11 +9,11 @@ try:
 except:
     ip_address_rdp = 'NONE_FAILED'
 try:
-    del list_of_vms_info[0]; del list_of_vms_info[len(list_of_vms_info) - 1]
+    del list_of_vms_info[0]; #del list_of_vms_info[len(list_of_vms_info) - 1] АПДЕЙТ ОТ 04 06 17:20 УБРАЛ ДЕЛ ПОСЛЕДНЕГО ИНДЕКСА
     for i in range(len(list_of_vms_info)):
         list_of_vms_info[i] = list_of_vms_info[i][list_of_vms_info[i].find('IPAddresses'):]
     list_of_vms_info.sort() # ОТСОРТИРОВАЛИ
-    text_serv_group = 'server_group'
+    text_serv_group = 'servers_group'
     def sort_ips_from_file(list_of_vms, start_vms, number_of_vms):
         ips_str = ''
         for i in range(start_vms, number_of_vms):
@@ -52,13 +52,13 @@ try:
         ips_serv_group = sort_ips_from_file(list_of_vms_info, 12, 16)
         from_rdp_to_tg(ips_serv_group, 4)
         print(ips_serv_group)
-    if len(list_of_vms_info) != 17 and len(list_of_vms_info) != 12 and len(list_of_vms_info) != 7 and len(list_of_vms_info) != 3 and len(list_of_vms_info) != 16:
+    if len(list_of_vms_info) != 17 and len(list_of_vms_info) != 13 and len(list_of_vms_info) != 8 and len(list_of_vms_info) != 3 and len(list_of_vms_info) != 16:
         ips_serv_group = 'Некорректно подсчитались строки в файле. \n значения, которые могут быть - [3], [8], [13], [17] \n Текущее значение:' + str(len(list_of_vms_info))
         from_rdp_to_tg(ips_serv_group, 0)
         print(ips_serv_group)
 except:
     TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
     chat_id = '506640934'
-    message = '[PW5] RDP IP_ADRESS: ' + ip_address_rdp + '\n[' 'АККАУНТ ВО ФРОДЕ / ЛИБО ДРУГАЯ ОШИБКА' + ']\n' + '=================\n'
+    message = 'RDP IP_ADRESS: ' + ip_address_rdp + '\n[' 'АККАУНТ ВО ФРОДЕ / ЛИБО ДРУГАЯ ОШИБКА' + ']\n' + '=================\n'
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json())
