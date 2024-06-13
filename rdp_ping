@@ -3,6 +3,7 @@
 import serviceping, requests
 number_of_rdps = 0
 number_of_disable_rdps = 0
+list_of_disable_rdp = list()
 rdp_ip_file = open('rdp_ip.txt')
 rdp_ip = rdp_ip_file.read()
 list_rdp_ips = rdp_ip.split('\n')
@@ -11,13 +12,14 @@ for i in range(len(list_rdp_ips)):
     if status_rdp['state'] == 'open':
         number_of_rdps += 1
     else:
+        list_of_disable_rdp.append(status_rdp['host'])
         number_of_disable_rdps += 1
 print("МЕРТВЫЕ РДП - ", number_of_disable_rdps)
-print("ЖИВЫЕ РДП - ", number_of_rdps)
+print("ЖИВЫЕ РДП - ", number_of_rdps, '\n', *list_of_disable_rdp)
 ################# ОТПРАВЛЕНИЕ ДАННЫХ В ТГ БОТ BOTINOK
 TOKEN = "5725759489:AAGHJghIdbSZhHglu7mi36p0G_0tvgz_MKM"
 chat_id = '506640934'
-message = f'========================================================\n ACTIVE RDPS: [{number_of_rdps}] %F0%9F%98%81\n DISABLE RDPS: [{number_of_disable_rdps}]\n========================================================'
+message = f'========================================================\n ACTIVE RDPS: [{number_of_rdps}] %F0%9F%98%81\n DISABLE RDPS: [{number_of_disable_rdps}]\n {list_of_disable_rdp} ========================================================'
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
 print(requests.get(url).json()) # Эта строка отсылает сообщение
 ##################
