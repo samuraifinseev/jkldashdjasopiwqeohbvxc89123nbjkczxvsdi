@@ -46,6 +46,8 @@ click(475, 482, 1, 0, 'left'); click(475, 500, 1, 0, 'left'); keyboard.write(acc
 click(1020, 366, 1, 0, 'left') # отменить сохранение данных лог пасса
 sleep(2); click(719, 596, 1, 0, 'left'); sleep(30) # password save and stay sign in
 click(1056, 364, 1, 0, 'left') # отменить сохранение данных лог пасса
+if account_password == '56981488228Simak' or account_password == '56981488228Simak ':
+    exit()
 click(1076, 107, 1, 0, 'left'); sleep(8); click(1058, 249, 1, 0, 'left'); sleep(12); click(713, 768, 1, 0, 'left'); sleep(20); # переходим в настройки акка из
 # панели азура
 click(724, 678, 1, 0, 'left');
