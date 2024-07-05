@@ -21,7 +21,7 @@ def ping_vm_for_available(list_of_ips):
 def from_vm_to_tg(ips):
     TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
     chat_id = '506640934'
-    message = 'RDP IP_ADRESS: ' + ip_address_vm + '\n[' + 'LINUX NO SHAG' + ']\n' + '=================\n' + ips
+    message = 'RDP IP_ADRESS: ' + ip_address_vm + '\n[' + 'LINUX NO SHAG(PINGED VMS)' + ']\n' + '=================\n' + ips
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
     print(requests.get(url).json())  # Эта строка отсылает сообщение
 #####==================
