@@ -39,7 +39,10 @@ try:
             temp_stroka_ip = ''
     print(ready_list_of_ips); print(len(ready_list_of_ips))
     text_of_pinged_ip = ping_vm_for_available(ready_list_of_ips)
-    from_vm_to_tg(text_of_pinged_ip)
+    if text_of_pinged_ip == '':
+        from_vm_to_tg('НЕТ АКТИВНЫХ ВМОК ИЛИ ЧЕТ СЛОМАЛОСЬ. ЗАЙДИ И ГЛЯНЬ')
+    else:
+        from_vm_to_tg(text_of_pinged_ip)
 except:
     TOKEN = "6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE"
     chat_id = '506640934'
