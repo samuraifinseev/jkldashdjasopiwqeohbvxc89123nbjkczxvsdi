@@ -2,7 +2,7 @@
 
 az group create --name servers_group --location eastus # eastus
 az vm create --resource-group servers_group --name server10 --location uksouth --image microsoft-dsvm:ubuntu-hpc:2204:latest --size Standard_DC2s_v3 --admin-username azureuser --admin-password 56981488228Simak --priority Spot --max-price -1 --eviction-policy Deallocate --public-ip-sku Standard --security-type Standard --storage-sku Standard_LRS --os-disk-size-gb 64
-az vm create --resource-group servers_group --name server11 --location eastus2 --image microsoft-dsvm:ubuntu-hpc:2204:latest --size Standard_DC2s_v3 --admin-username azureuser --admin-password 56981488228Simak --priority Spot --max-price -1 --eviction-policy Deallocate --public-ip-sku Standard --security-type Standard --storage-sku Standard_LRS --os-disk-size-gb 64 #был dc2sv3
+az vm create --resource-group servers_group --name server11 --location eastus2 --image microsoft-dsvm:ubuntu-hpc:2204:latest --size Standard_F2s_v2 --admin-username azureuser --admin-password 56981488228Simak --priority Spot --max-price -1 --eviction-policy Deallocate --public-ip-sku Standard --security-type Standard --storage-sku Standard_LRS --os-disk-size-gb 64 #был dc2sv3
 az vm create --resource-group servers_group --name server12 --location eastus --image microsoft-dsvm:ubuntu-hpc:2204:latest --size Standard_DC2s_v3 --admin-username azureuser --admin-password 56981488228Simak --priority Spot --max-price -1 --eviction-policy Deallocate --public-ip-sku Standard --security-type Standard --storage-sku Standard_LRS --os-disk-size-gb 64
 sleep 111
 az vm run-command invoke -g servers_group -n server10 --command-id RunShellScript --scripts "sudo apt update && sudo apt install -y tmux tor mc openvpn"
