@@ -35,5 +35,5 @@ az vm restart -g servers_group -n server29
 # az vm start -g servers_group -n server27
 # az vm start -g servers_group -n server28
 # az vm start -g servers_group -n server29
-sleep30
+sleep60
 python3 linux_send_ip_to_tg.py
