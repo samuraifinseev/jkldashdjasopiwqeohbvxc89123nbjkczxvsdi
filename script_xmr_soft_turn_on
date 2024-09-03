@@ -29,6 +29,11 @@ tar -xf qubic.tar.gz
 #### spectre TNN MINER \\\\ torify ./tnn-miner --spectre --wallet spectre:qrrjcpuscnzylt3ukzjymwslp9e68zer2h8gdr6dk88hg53mncavxzhcepxsw --daemon-address spr.tw-pool.com --port 14001 --worker-name test --threads 2
 wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/tnn-miner-0.3.7.tar.gz
 tar -xf tnn-miner-0.3.7.tar.gz
+
+##### APOOL MINER QUBIC ######## torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
+wget https://github.com/apool-io/apoolminer/releases/download/v1.9.4/apoolminer_linux_v1.9.4.tar -P /home/azureuser
+tar -xf SRBMiner-Multi-2-4-7-Linux.tar.xz
+
 #####################################################################################################################
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo -P /home/azureuser
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2 -P /home/azureuser
