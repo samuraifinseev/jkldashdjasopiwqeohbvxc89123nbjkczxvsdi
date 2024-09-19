@@ -24,8 +24,12 @@ tar -xf SRBMiner-Multi-2-4-7-Linux.tar.xz
 sudo rm -r SRBMiner-Multi-2-4-7-Linux.tar.xz
 mv /home/azureuser/SRBMiner-Multi-2-4-7/* /home/azureuser
 #### QUBIC \ QLI-CLIENT\ tmux new -ds servak torify ./qli-Client
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser
-tar -xf qubic.tar.gz
+mkdir /home/azureuser/qub_dir
+cd /home/azureuser/qub_dir
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir
+tar -xf /home/azureuser/qub_dir/qubic.tar.gz
+
+
 #### spectre TNN MINER \\\\ torify ./tnn-miner --spectre --wallet spectre:qrrjcpuscnzylt3ukzjymwslp9e68zer2h8gdr6dk88hg53mncavxzhcepxsw --daemon-address spr.tw-pool.com --port 14001 --worker-name test --threads 2
 wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/tnn-miner-0.3.7.tar.gz
 tar -xf tnn-miner-0.3.7.tar.gz
