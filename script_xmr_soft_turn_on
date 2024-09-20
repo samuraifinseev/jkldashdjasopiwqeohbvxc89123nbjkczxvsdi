@@ -31,7 +31,7 @@ mv /home/azureuser/SRBMiner-Multi-2-4-7/* /home/azureuser
 #### QUBIC \ QLI-CLIENT\ tmux new -ds servak torify ./qli-Client
 mkdir /home/azureuser/qub_dir
 cd /home/azureuser/qub_dir
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir -N
 tar -xf /home/azureuser/qub_dir/qubic.tar.gz
 
 cd /home/azureuser
