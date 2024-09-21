@@ -1,4 +1,6 @@
 #!/bin/bash
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/refs/heads/main/needrestart.conf -P /home/azureuser
+sudo mv /home/azureuser/needrestart.conf /etc/needrestart/
 sudo apt update
 sudo apt install tmux tor mc openvpn -y
 cd home/azureuser
