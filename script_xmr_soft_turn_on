@@ -1,4 +1,15 @@
 #!/bin/bash
+
+if grep -q "20.04" /etc/lsb-release; then
+    sudo chmod 777 /etc/apt/sources.list
+    
+    if grep -q "jammy" /etc/apt/sources.list; then echo "already jammy in source";else sudo echo "deb http://archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list;echo "added"; fi
+    echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-selections
+    
+    sudo apt update && sudo apt install libc6 -y
+fi
+
+
 wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/refs/heads/main/needrestart.conf -P /home/azureuser
 sudo mv /home/azureuser/needrestart.conf /etc/needrestart/
 echo TEXT="$((RANDOM % 999999 + 2))" >> /home/azureuser/.bashrc
