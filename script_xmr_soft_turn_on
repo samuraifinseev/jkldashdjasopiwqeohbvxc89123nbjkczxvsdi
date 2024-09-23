@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if grep -q "20.04" /etc/lsb-release; then
+ldd --version | if grep -qE '2\.3[01234]'; then
     sudo chmod 777 /etc/apt/sources.list
     
     if grep -q "jammy" /etc/apt/sources.list; then echo "already jammy in source";else sudo echo "deb http://archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list;echo "added"; fi
