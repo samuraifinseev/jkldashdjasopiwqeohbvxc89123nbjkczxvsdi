@@ -42,7 +42,7 @@ tar -xf hellminer_linux64_avx.tar.gz
 rm -r hellminer_linux64_avx.tar.gz
 #### SRB MINER MULTI КОНФИНГ: tmux new -ds servak sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ru.vipor.net:5040 --wallet RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS --proxy localhost:9050 --cpu-threads 2
 wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.6.6/SRBMiner-Multi-2-6-6-Linux.tar.gz -P /home/azureuser -N
-tar -xf SRBMiner-Multi-2-6-6-Linux.tar.gz
+tar -xf /home/azureuser/SRBMiner-Multi-2-6-6-Linux.tar.gz
 mv /home/azureuser/SRBMiner-Multi-2-6-6/* /home/azureuser
 #### QUBIC \ QLI-CLIENT\ tmux new -ds servak torify ./qli-Client
 mkdir /home/azureuser/qub_dir
