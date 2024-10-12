@@ -60,8 +60,8 @@ wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/r
 tar -xf tnn-miner-0.3.7.tar.gz
 
 ##### APOOL MINER QUBIC ######## torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
-wget https://github.com/apool-io/apoolminer/releases/download/v2.4.1/apoolminer_linux_v2.4.1.tar -P /home/azureuser/qub_dir
-tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.4.1.tar -C /home/azureuser/qub_dir/
+wget https://github.com/apool-io/apoolminer/releases/download/v2.4.3/apoolminer_linux_v2.4.3.tar -P /home/azureuser/qub_dir
+tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.4.3.tar -C /home/azureuser/qub_dir/
 
 #####################################################################################################################
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo -P /home/azureuser
